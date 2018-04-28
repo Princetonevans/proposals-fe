@@ -1,6 +1,7 @@
 <h1>Create a Proposal</h1>
 
-<div>
+
+<div class="container">
     <form #proposalForm="ngForm">
         <div class="form-group">
             <label for="customer">Customer Name</label>
@@ -35,7 +36,7 @@
 
         <div class="form-group">
             <label for="estimated_hours">Estimated Hours</label>
-            <input type="text"
+            <input type="number"
                     id="estimated_hours"
                     required
                     name="estimated_hours"
@@ -45,7 +46,7 @@
 
         <div class="form-group">
             <label for="hourly_rate">Hourly Rate</label>
-            <input type="text"
+            <input type="number"
                     id="hourly_rate"
                     required
                     name="hourly_rate"
