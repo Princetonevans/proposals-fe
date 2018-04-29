@@ -7,8 +7,8 @@ import { Proposal } from './proposal';
 })
 export class ProposalListComponent {
     proposalOne: Proposal = new Proposal(5, 'Princeton Creative Design', 'http://www.princetonevans.com', 'Angular 2', 150, 120, 15, 'Princetonevans@yahoo.com')
-    proposalTwo: Proposal = new Proposal(5, 'Princeton Creative Digital', 'http://www.princetonevans.com', 'Angularjs', 140, 110, 13, 'Princetonevans@gmail.com')
-    proposalThree: Proposal = new Proposal(5, 'Princeton Creative ', 'http://www.princetonevans.com', 'Angular 4', 130, 100, 10, 'Princetonevans@office.com')
+    proposalTwo: Proposal = new Proposal(6, 'Princeton Creative Digital', 'http://www.princetonevans.com', 'Angularjs', 140, 110, 13, 'Princetonevans@gmail.com')
+    proposalThree: Proposal = new Proposal(7, 'Princeton Creative ', 'http://www.princetonevans.com', 'Angular 4', 130, 100, 10, 'Princetonevans@office.com')
 
     proposals: Proposal[] = [
         this.proposalOne,

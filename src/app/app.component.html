@@ -1,16 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+
   
-  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Princeton Proposals</h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" routerLink="/home">Home</a>
-        <a class="p-2 text-dark" routerLink="/documents">Documents</a>
-        <a class="p-2 text-dark" routerLink="/proposals">Proposals</a>
-        <a class="p-2 text-dark" routerLink="/proposals/new">New Proposals</a>
-        
-      </nav>
-      <a class="btn btn-outline-primary" href="#">Sign up</a>
+   <div class="text-center">
+      
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Princeton</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" routerLink="/documents">Documents</a>
+        <a class="nav-item nav-link" routerLink="/proposals">Proposals</a>
+        <a class="nav-item nav-link" routerLink="/proposals/new">New Proposal</a>
+      </div>
     </div>
+  </nav>
+
+
 
 <router-outlet></router-outlet>
+</div>
