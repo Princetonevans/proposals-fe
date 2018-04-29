@@ -11,9 +11,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" routerLink="/home">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" routerLink="/documents">Documents</a>
-        <a class="nav-item nav-link" routerLink="/proposals">Proposals</a>
-        <a class="nav-item nav-link" routerLink="/proposals/new">New Proposal</a>
+        <a class="nav-item nav-link" routerLink="/documents" routerLinkActive="active">Documents</a>
+        <a class="nav-item nav-link" routerLink="/proposals" routerLinkActive="active"[routerLinkActiveOptions]="{ exact: true}" >Proposals</a>
+        <a class="nav-item nav-link" routerLink="/proposals/new" routerLinkActive="active">New Proposal</a>
       </div>
     </div>
   </nav>
