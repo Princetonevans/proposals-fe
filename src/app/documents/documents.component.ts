@@ -11,24 +11,24 @@ export class DocumentsComponent implements OnInit {
     documents: Document[] = [
       {
         title: 'My first Doc',
-        description: 'proposals',
+        description: 'Download',
         file_url: 'http://google.com',
         updated_at: '4/25/18',
-        image_url: 'http://google.com',
+        image_url: 'https://i.amz.mshcdn.com/FiAYO5Wh70RQrWffTZGcwfa1j44=/950x534/filters:quality(90)/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F642692%2F5579d450-4569-4ae7-96eb-7d144b6df94d.jpg',
       },
       {
         title: 'My second Doc',
-        description: 'proposals',
+        description: 'Download',
         file_url: 'http://google.com',
         updated_at: '4/26/18',
-        image_url: 'http://googleplus.com',
+        image_url: 'https://i.amz.mshcdn.com/FiAYO5Wh70RQrWffTZGcwfa1j44=/950x534/filters:quality(90)/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F642692%2F5579d450-4569-4ae7-96eb-7d144b6df94d.jpg',
       },
       {
         title: 'My third Doc',
-        description: 'proposals',
+        description: 'Download',
         file_url: 'http://google.com',
         updated_at: '4/28/18',
-        image_url: 'http://googleanalytics.com',
+        image_url: 'https://i.amz.mshcdn.com/FiAYO5Wh70RQrWffTZGcwfa1j44=/950x534/filters:quality(90)/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F642692%2F5579d450-4569-4ae7-96eb-7d144b6df94d.jpg',
       }
     ];
   constructor() { }
