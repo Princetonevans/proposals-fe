@@ -9,6 +9,9 @@ import { DocumentsComponent } from './documents/documents.component';
 import { ProposalListComponent } from './proposal/proposal-list.component';
 import { ProposalNewComponent } from './proposal/proposal-new.component';
 import { ProposalShowComponent } from './proposal/proposal-show.component';
+import { DocumentService } from './documents/document.service';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,9 +25,12 @@ import { ProposalShowComponent } from './proposal/proposal-show.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    DocumentService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
