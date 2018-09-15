@@ -1,17 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { AppRoutingModule } from './app-routing/app-routing.module';
 import { DocumentsComponent } from './documents/documents.component';
 import { ProposalListComponent } from './proposal/proposal-list.component';
 import { ProposalNewComponent } from './proposal/proposal-new.component';
 import { ProposalShowComponent } from './proposal/proposal-show.component';
-import { DocumentService } from './documents/document.service';
 
-import { HttpClientModule } from '@angular/common/http';
+import { DocumentService } from './documents/document.service';
+import { ProposalService } from './proposal/proposal.service';
+import { HttpModule } from '@angular/http';
+
+
+
 
 @NgModule({
   declarations: [
@@ -26,10 +31,12 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpModule
   ],
   providers: [
-    DocumentService
+    DocumentService,
+    ProposalService
   ],
   bootstrap: [AppComponent]
 })
