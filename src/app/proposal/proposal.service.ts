@@ -1,12 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { tap } from 'rxjs/operators/tap';
 import { Proposal } from './proposal'
+import { RequestOptions, Response, Headers, Http } from '@angular/http';
 @Injectable()
 export class ProposalService {
 
   proposalsUrl = 'http://localhost:3002/proposals';
+
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type':  'application/json',
+      'Authorization': 'my-auth-token'
+    })
+  };
 
   constructor(private http: HttpClient) { }
 
@@ -18,5 +26,9 @@ export class ProposalService {
 
   getProposal(id: number) {
     return this.http.get(this.proposalsUrl + '/' + id);
+  }
+
+  createProposal(proposal) {
+    return this.http.post<Proposal>(this.proposalsUrl, proposal, this.httpOptions)
   }
 }
